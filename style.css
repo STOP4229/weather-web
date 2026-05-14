@@ -1,0 +1,110 @@
+body{
+   background-image: url(cloudy.jpg);
+   height: 100vh;
+background-size: cover;
+ background-repeat: no-repeat;
+}  
+.areaname{
+    height: 100px;
+    width: 95vw;
+    background-image: url(https://images.pexels.com/photos/9084163/pexels-photo-9084163.jpeg);
+    background-size: cover;
+    
+}
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(3, 300px); 
+  justify-content: space-between;                 
+  gap: 20px;  
+
+}
+.box {
+  height: 300px;
+  background: rgb(210, 253, 246);
+}
+
+@media (max-width: 767px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    max-height: 150px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+  body{
+    background-image: none;
+    background-color: rgb(113, 216, 216);
+  }
+}
+select{
+  width: 95vw;
+
+}
+select {
+  border: none;
+ 
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+}
+select:hover{
+  cursor: pointer;
+}
+option{
+  border-radius: 10px;
+  background-color: rgb(140, 240, 240);
+  text-align: center;
+}
+.button {
+background-color: rgb(167, 247, 247);
+display: inline-block;
+text-decoration: none;
+color: black;
+border-radius: 10px; 
+border: none;
+width: 200px;
+}  
+.input {
+  width: 500px;
+  animation: my_animations 0.5s ease-in-out ; 
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px;
+  border: none;
+}
+.hidden{
+  display: none; 
+} 
+
+@keyframes my_animations {
+  from { 
+    border-radius: 10px;
+    width: 200px;
+  } 
+  to {
+    border-radius: 15px;
+    width: 500px;
+  }
+} 
+.submit-button {
+  background-color: aqua;
+  border-radius: 10px;
+  border: none;
+}  
+.country-select {
+  background-color: rgb(255, 43, 43);
+  width: 100px;
+  color: rgb(14, 16, 19);
+} 
+.search-list{
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px;
+} 
+li:hover{
+ cursor: pointer; 
+ background-color: rgb(200, 210, 219);
+}
